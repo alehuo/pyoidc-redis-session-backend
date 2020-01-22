@@ -18,6 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=['oic', 'jsonpickle', 'redis'],
+    install_requires=['oic', 'jsonpickle', 'redis', 'pycryptodome'],
     python_requires='>=3.6',
 )
