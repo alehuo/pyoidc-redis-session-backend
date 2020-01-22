@@ -10,10 +10,10 @@ from typing import List
 from typing import Optional
 from typing import Union
 from typing import cast
-from Crypto.PublicKey.RSA import RsaKey, import_key
+from Cryptodome.PublicKey.RSA import RsaKey, import_key
 
 class RSAHandler(BaseHandler):
-    def flatten(self, obj: RsaKey, data): 
+    def flatten(self, obj: RsaKey, data):
         data["rsa_key"] = base64.b64encode(obj.export_key()).decode("utf-8")
         return data
 

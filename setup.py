@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pyoidc-redis-session-backend-alehuo",
-    version="1.0.3",
+    version="1.0.4",
     author="Aleksi H",
     author_email="aleksi.huotala@helsinki.fi",
     description="Redis-based session storage for pyoidc library",
@@ -20,7 +20,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     license="MIT",
-    install_requires=['oic', 'jsonpickle', 'redis', 'pycryptodome'],
+    install_requires=['oic', 'jsonpickle', 'redis', 'pycryptodome', 'pycryptodomex'],
     python_requires='>=3.6',
     test_suite='nose.collector',
     tests_require=['nose'],
