@@ -1,6 +1,7 @@
 import redis
 import jsonpickle
-from jsonpickle.handlers import BaseHandler
+import base64
+from jsonpickle import handlers
 from oic.utils.session_backend import AuthnEvent, SessionBackend
 from typing import Any
 from typing import Dict
@@ -10,14 +11,15 @@ from typing import Union
 from typing import cast
 from Crypto.PublicKey.RSA import RsaKey, import_key
 
-class RSAHandler(BaseHandler):
+class RSAHandler(handlers.BaseHandler):
     def flatten(self, obj: RsaKey, data): 
-        return obj.export_key() 
+        data["rsa_key"] = base64.b64encode(obj.export_key()).decode("utf-8")
+        return data
 
     def restore(self, obj):
-        return import_key(obj)
+        return import_key(base64.b64decode(obj["rsa_key"]))
 
-jsonpickle.handlers.registry.register(RsaKey, RSAHandler)
+handlers.register(RsaKey, RSAHandler)
 
 class RedisSessionBackend(SessionBackend):
     """

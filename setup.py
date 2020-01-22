@@ -22,4 +22,6 @@ setuptools.setup(
     license="MIT",
     install_requires=['oic', 'jsonpickle', 'redis', 'pycryptodome'],
     python_requires='>=3.6',
+    test_suite='nose.collector',
+    tests_require=['nose'],
 )
