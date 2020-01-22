@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyoidc-redis-session-backend-alehuo",  # Replace with your own username
+    name="pyoidc_redis_session_backend",
     version="1.0.0",
     author="Aleksi Huotala",
     author_email="aleksi.huotala@helsinki.fi",
