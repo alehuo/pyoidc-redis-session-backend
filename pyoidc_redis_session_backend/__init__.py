@@ -37,11 +37,10 @@ class RedisSessionBackend(SessionBackend):
 
     def __getitem__(self, key: str) -> Dict[str, Union[str, bool]]:
         """Retrieve session information based on session id."""
-        try:
-            data = self.r.get(key)
-            return jsonpickle.decode(data.decode("utf-8"))
-        except KeyError:
-            return None
+        data = self.r.get(key)
+        if(data == None):
+            raise KeyError # Makes __getItem__ handle like Python dict
+        return jsonpickle.decode(data.decode("utf-8"))
 
     def __delitem__(self, key: str) -> None:
         """Delete the session info."""
