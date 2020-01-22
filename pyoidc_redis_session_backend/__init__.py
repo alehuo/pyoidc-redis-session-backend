@@ -37,8 +37,11 @@ class RedisSessionBackend(SessionBackend):
 
     def __getitem__(self, key: str) -> Dict[str, Union[str, bool]]:
         """Retrieve session information based on session id."""
-        data = self.r.get(key)
-        return jsonpickle.decode(data.decode("utf-8"))
+        try:
+            data = self.r.get(key)
+            return jsonpickle.decode(data.decode("utf-8"))
+        except KeyError:
+            return None
 
     def __delitem__(self, key: str) -> None:
         """Delete the session info."""
