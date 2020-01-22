@@ -1,7 +1,7 @@
 import redis
 import jsonpickle
 import base64
-from jsonpickle import handlers
+import jsonpickle
 from oic.utils.session_backend import AuthnEvent, SessionBackend
 from typing import Any
 from typing import Dict
@@ -19,7 +19,7 @@ class RSAHandler(handlers.BaseHandler):
     def restore(self, obj):
         return import_key(base64.b64decode(obj["rsa_key"]))
 
-handlers.register(RsaKey, RSAHandler)
+jsonpickle.register(RsaKey, RSAHandler)
 
 class RedisSessionBackend(SessionBackend):
     """
