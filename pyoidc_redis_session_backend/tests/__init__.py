@@ -1,7 +1,7 @@
 from unittest import TestCase
 import jsonpickle
 import fakeredis
-from pyoidc_redis_session_backend import RSAHandler, RedisSessionBackend
+from pyoidc_redis_session_backend import RSAKeyHandler, RedisSessionBackend
 from Cryptodome.PublicKey.RSA import RsaKey
 from Cryptodome.PublicKey import RSA
 
