@@ -8,6 +8,8 @@ This repository contains source code for a Redis-based session storage backend f
 
 ## Usage
 
+A ready-to-run project is located at https://github.com/alehuo/pyoidc-redis-session-backend-example
+
 Below is an example piece of code that initializes a Redis client which is then used to create an instance of RedisSessionBackend. After that, a Consumer is created which is then configured to use the Redis session backend as its backend.
 
 ```python
