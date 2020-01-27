@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pyoidc-redis-session-backend-alehuo",
-    version="1.0.7",
+    name="pyoidc-redis-session-backend",
+    version="1.0.0",
     author="alehuo",
     author_email="aleksi.huotala@helsinki.fi",
     description="Redis-based session storage for pyoidc library",
