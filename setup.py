@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.0.0",
     author="alehuo",
     author_email="aleksi.huotala@helsinki.fi",
-    description="Redis-based session storage for pyoidc library",
+    description="Redis-based session storage for oic library",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/alehuo/pyoidc-redis-session-backend",
@@ -22,6 +22,4 @@ setuptools.setup(
     license="MIT",
     install_requires=['oic', 'jsonpickle', 'redis', 'pycryptodome', 'pycryptodomex'],
     python_requires='>=3.6',
-    test_suite='nose.collector',
-    tests_require=['nose'],
 )

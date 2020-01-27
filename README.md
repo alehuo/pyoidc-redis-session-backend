@@ -47,7 +47,7 @@ To initialize the development environment, run:
 
 ## Running tests
 
-Run tests with `pytest`.
+Run tests with `python -m pytest tests/`.
 
 ## Contributions
 
