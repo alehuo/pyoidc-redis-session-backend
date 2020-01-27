@@ -47,7 +47,7 @@ To initialize the development environment, run:
 
 ## Running tests
 
-Run tests with `nosetests`.
+Run tests with `pytest`.
 
 ## Contributions
 

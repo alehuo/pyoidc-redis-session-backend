@@ -131,4 +131,6 @@ pip-selfcheck.json
 # Ignore all local history of files
 .history
 
+junit
+
 # End of https://www.gitignore.io/api/python,virtualenv,visualstudiocode
