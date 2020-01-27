@@ -4,7 +4,7 @@ This repository contains source code for a Redis-based session storage backend f
 
 ## Installation
 
-**This project hasn't been released to PyPi yet, but you can find the test package in TestPyPi: https://test.pypi.org/project/pyoidc-redis-session-backend-alehuo/.**
+`pip install pyoidc-redis-session-backend`
 
 ## Usage
 
