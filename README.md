@@ -1,6 +1,6 @@
 # pyoidc-redis-session-backend
 
-[![PyPI version](https://badge.fury.io/py/pyoidc-redis-session-backend.svg)](https://badge.fury.io/py/pyoidc-redis-session-backend) [![PyPI license](https://img.shields.io/pypi/l/pyoidc-redis-session-backend.svg)](https://pypi.python.org/pypi/pyoidc-redis-session-backend/) [![GitHub issues](https://img.shields.io/github/issues/alehuo/pyoidc-redis-session-backend.svg)](https://GitHub.com/alehuo/pyoidc-redis-session-backend/issues/) [![GitHub pull-requests](https://img.shields.io/github/issues-pr/alehuo/pyoidc-redis-session-backend.svg)](https://GitHub.com/alehuo/pyoidc-redis-session-backend/pull/)
+[![PyPI version](https://badge.fury.io/py/pyoidc-redis-session-backend.svg)](https://badge.fury.io/py/pyoidc-redis-session-backend) [![PyPI license](https://img.shields.io/pypi/l/pyoidc-redis-session-backend.svg)](https://pypi.python.org/pypi/pyoidc-redis-session-backend/) [![GitHub issues](https://img.shields.io/github/issues/alehuo/pyoidc-redis-session-backend.svg)](https://GitHub.com/alehuo/pyoidc-redis-session-backend/issues/) [![GitHub pull-requests](https://img.shields.io/github/issues-pr/alehuo/pyoidc-redis-session-backend.svg)](https://GitHub.com/alehuo/pyoidc-redis-session-backend/pulls/)
 
 This repository contains source code for a Redis-based session storage backend for the `oic` Python library.
 
